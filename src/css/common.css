@@ -10,6 +10,7 @@ body {
   background-color: #fafafa;
   color: #212121;
   line-height: 1.5;
+  padding: 20px;
 }
 
 img {
@@ -24,14 +25,14 @@ img {
 }
 
 .switcher button {
-  padding: 8px 40px;
+  padding: 8px 50px;
 
   font-weight: 600;
   font-size: 30px;
   background-color: #495;
   color: #ee2;
   border: 0;
-  border-radius: 10px;
+  border-radius: 25px;
   cursor: pointer;
 }
 
@@ -60,8 +61,8 @@ img {
   font-size: 26px;
   font-weight: 600;
   color: #ee2;
-  padding: 10px 90px;
-  border-radius: 10px;
+  padding: 10px 100px;
+  border-radius: 25px;
   border: transparent;
 
   background-color: #495;
@@ -91,6 +92,42 @@ img {
 }
 
 .label {
+  
   font-size: 16px;
   color: #636363;
+}
+
+form  {
+display: inline-flex;
+flex-direction: column;
+gap: 20px;
+}
+
+form label input {
+  font-size: 22px;
+  
+}
+
+
+form label {
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+}
+
+form button {
+  font-size: 16px;
+  font-weight: 600;
+  color: #ee2;
+  padding: 10px 90px;
+  border-radius: 19px;
+  border: transparent;
+
+  background-color: #495;
+  cursor: pointer;
+}
+
+form button:disabled {
+  color: antiquewhite;
+  background-color: #777;
 }
