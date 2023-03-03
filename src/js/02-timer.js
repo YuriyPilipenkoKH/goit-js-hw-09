@@ -2,7 +2,6 @@ import flatpickr from 'flatpickr';
 import 'flatpickr/dist/flatpickr.min.css';
 import Notiflix from 'notiflix';
 
-console.log('dart');
 
 const refs = {
     startBtn: document.querySelector('button[data-start]'),
