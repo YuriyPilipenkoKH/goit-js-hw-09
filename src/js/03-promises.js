@@ -19,12 +19,17 @@ function createPromise(position, delay) {
         reject({ position, delay });
         // Reject
       }
+      if(position === amount) {
+        createBtn.removeAttribute('disabled', '')
+      }
+      
     }, delay);
   });
 }
 
 function onFormSubmit(e) {
   e.preventDefault();
+  createBtn.setAttribute('disabled', '')
 
   const formData = new FormData(e.currentTarget);
 
