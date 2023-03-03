@@ -53,5 +53,5 @@ function onFormSubmit(e) {
     delay += step;
    
   }
- 
+  e.currentTarget.reset();
 }
