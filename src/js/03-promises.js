@@ -1,5 +1,4 @@
 import Notiflix from 'notiflix';
-console.log('dart');
 let timerId = null;
 let formValues = {};
 
@@ -52,7 +51,7 @@ function onFormSubmit(e) {
       })
    
     delay += step;
-    console.log(position);
+  
    
   }
   e.currentTarget.reset();
