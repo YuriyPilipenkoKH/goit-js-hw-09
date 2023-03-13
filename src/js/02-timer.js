@@ -12,7 +12,8 @@ const refs = {
     secondsLabel: document.querySelector('span[data-seconds]'),
 };
 
-  
+console.log(refs.input.value);  
+
   refs.startBtn.addEventListener('click', onStartClick);
   refs.startBtn.disabled = true;
   refs.startBtn.classList.add('counter');
@@ -58,10 +59,12 @@ const options = {
     }, 1000);
   }
   
-  function onStartClick() {
+  function onStartClick(e) {
+    console.dir(e);
     timerStart();
     refs.startBtn.disabled = true;
     refs.input.disabled = true;
+    refs.input.value = '';
   }
   
   function addLeadingZero(value) {
